@@ -14,6 +14,8 @@ set(HDRS
     statemachine/View.hpp
     statemachine/Layer.hpp
     statemachine/CommandFactory.hpp
+    statemachine/MoveEvent.hpp
+    statemachine/Drops.hpp
 
     score_addon_statemachine.hpp
 )
@@ -24,6 +26,8 @@ set(SRCS
     statemachine/Presenter.cpp
     statemachine/Process.cpp
     statemachine/View.cpp
+    statemachine/MoveEvent.cpp
+    statemachine/Drops.cpp
 
     score_addon_statemachine.cpp
 )

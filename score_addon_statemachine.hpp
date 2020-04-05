@@ -27,6 +27,9 @@ private:
   std::vector<std::unique_ptr<score::InterfaceBase>> factories(
       const score::ApplicationContext& ctx,
       const score::InterfaceKey& key) const override;
+  std::vector<std::unique_ptr<score::InterfaceBase>> guiFactories(
+      const score::GUIApplicationContext&,
+      const score::InterfaceKey& factoryName) const override;
 
   std::pair<const CommandGroupKey, CommandGeneratorMap>
   make_commands() override;
